@@ -4,17 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUST BILLARD</title>
+    <title>HUST BILLIARD</title>
     <link rel="icon" type="image/x-icon"
         href="https://www.bing.com/th/id/OIP.4vg24QUDc-s-gpXsNaRQDAHaHa?w=198&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2&ucfimg=1">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./assets/img/logo bi a/OIP.jpg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url('./assets/img/logo bi a/OIP.jpg') center/cover no-repeat;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #f1c40f;
+            color: #000;
+        }
+
+        .btn-primary:hover {
+            background-color: #d4ac0d;
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .btn-outline:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>HUST BILLIARD</h1>
+            <p>
+                Welcome to HUST Billiard - the ideal place for students and billiard lovers
+                to relax, compete, and enjoy great moments with friends.
+            </p>
 
+            <div class="hero-btns">
+                <a href="#booking" class="btn btn-primary">Book a Table</a>
+                <a href="#about" class="btn btn-outline">Explore More</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
